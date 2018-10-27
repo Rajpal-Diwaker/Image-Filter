@@ -1,0 +1,195 @@
+.clr {
+    clear: both;
+    /*It clears all the floats i.e alignment of blocks*/
+}
+
+#image-container {
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin-top: 40px;
+    margin-left: 40px;
+    overflow: hidden;
+    border: solid 1px black;
+    float: left;
+    box-shadow: 15px 15px 50px black;
+    box-sizing: border-box;
+    background-image: url('images/nature2.png');
+    /*avoid repeat*/
+    background-repeat: no-repeat;
+    /* center both x and y */
+    background-position: center center;
+    /* fit whole image in centre */
+    background-size: contain;
+    /* cover the whole div */
+    background-size: cover;
+    /* blur : more pixel => more blur */
+    /* filter: blur(10px); */
+    /* greyscale : value from 0 to 1 */
+    /* filter: grayscale(0); */
+    /* opacity : value from 0 to 1 */
+    /* filter: opacity(0); */
+    /* hue-rotate : odeg to 360deg */
+    /* filter: hue-rotate(0deg); */
+    /* sepia : value from 0 to 1 */
+    /* filter: sepia(0); */
+    /* invert : like negative */
+    /* filter: invert(0); */
+    /* contrarst : 0 to 1 */
+    /* filter: contrast(1); */
+    /* satura : nullify on 1 */
+    /* filter: saturate(1); */
+    /* box-shadow: 10px 10px 30px brown; */
+/* 
+filter: blur(3px) grayscale(0) hue-rotate(0deg) 
+sepia(0) invert(0) contrast(1) saturate(1); */
+}
+
+#image-container:hover {
+    transform: translateX(-10px) translateY(-10px);
+    box-shadow: 20px 20px 50px black;
+    transition: all 0.5s;
+}
+
+#image-container:active {
+    transform: translateX(10px) translateY(10px);
+    box-shadow: 0px 0px 50px black;
+    transition: all 0.5s;
+}
+
+#bars-container {
+    display: block;
+    box-sizing: border-box;
+    float: right;
+    margin-top: 40px;
+    margin-right: 40px;
+    height: 500px;
+    width: 600px;
+    border: solid 1px black;
+}
+
+#bars-container h1 {
+    text-align: center;
+}
+
+.row {
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    height: 80px;
+    /* border: solid 1px red; */
+}
+
+.cell-l, .cell-r {
+    height: 70px;
+    width: 45%;
+    box-sizing: border-box;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    /* border: solid 1px blue; */
+    position: relative;
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    display: block;
+    box-shadow: 2px 2px 10px #37a398;
+}
+
+.cell-l:hover, .cell-r:hover {
+    /* transform: translateX(-2px) translateY(-2px); */
+    transform: scaleX(1.08) scaleY(1.08);
+    box-shadow: 2px 2px 10px #37a398;
+    transition: all 0.5s;
+}
+
+/* .cell-l:active, .cell-r:active {
+    transform: translateX(2px) translateY(2px);
+    box-shadow: 0px 0px 10px #37a398;
+    transition: all 0.5s;
+} */
+
+.cell-l {
+    float: left;
+    margin-left: 10px;
+}
+
+.cell-r {
+    float: right;
+    margin-right: 10px;
+}
+
+.property {
+    text-align: center;
+    margin-top: 2px;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.slidecontainer {
+    width: 100%;
+    /* Width of the outside container */
+}
+
+/* The slider itself */
+
+.slider {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 100%;
+    /* Full-width */
+    height: 25px;
+    /* Specified height */
+    background: #d3d3d3;
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    opacity: 0.7;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border: solid 1px #4CAF50;
+    box-sizing: border-box;
+}
+
+/* Mouse-over effects */
+
+.slider:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 28px;
+    /* Set a specific slider handle width */
+    height: 28px;
+    /* Slider handle height */
+    background: #4CAF50;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+    border: solid 2px black;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: #4CAF50;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+    border: solid 1px black;
+    box-sizing: border-box;
+}

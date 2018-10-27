@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div id="image-container">
+
+    </div>
+    <div id="bars-container">
+        <h1>FILTERS</h1>
+        <div class="row">
+            <div class="cell-l">
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="10" value="0" class="slider" id="blur">
+                </div>
+                <div class="property" id="p1">Blur = 0</div>
+            </div>
+            <div class="cell-r">
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="grey-scale">
+                </div>
+                <div class="property" id="p2">Grey-Scale = 0</div>
+            </div>
+        </div>
+
+        <div class="clr"></div>
+
+        <div class="row">
+            <div class="cell-l">
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="100" class="slider" id="opacity">
+                </div>
+                <div class="property" id="p3">opacity = 1</div>
+            </div>
+            <div class="cell-r">
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="360" value="0" class="slider" id="hue-rotate">
+                </div>
+                <div class="property" id="p4">hue-rotate = 0</div>
+            </div>
+        </div>
+
+        <div class="clr"></div>
+
+        <div class="row">
+            <div class="cell-l">
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="sepia">
+                </div>
+                <div class="property" id="p5">sepia = 0</div>
+            </div>
+            <div class="cell-r">
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="invert">
+                </div>
+                <div class="property" id="p6">invert = 0</div>
+            </div>
+        </div>
+
+        <div class="clr"></div>
+
+        <div class="row">
+            <div class="cell-l">
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="100" class="slider" id="contrast">
+                </div>
+                <div class="property" id="p7">contrast = 1</div>
+            </div>
+            <div class="cell-r">
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="100" class="slider" id="saturate">
+                </div>
+                <div class="property" id="p8">saturate = 1</div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+
+</html>
